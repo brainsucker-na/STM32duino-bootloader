@@ -2,7 +2,8 @@
 
 Please Note. This code does not work with all STM32F103 Boards
 
-Also Note. Use GCC 4.8 (not 4.9 or newer, as these versions have more aggressive optimisation which causes hardware registers not be read correctly and consequently the bootloader does not work)
+Also Note. **Use GCC 4.8 (not 4.9 or newer, as these versions have more aggressive optimisation which causes hardware registers not be read correctly and consequently the bootloader does not work).
+There are [reports](https://github.com/rogerclarkmelbourne/STM32duino-bootloader/issues/19#issuecomment-288588089) of builds compiled with GCC 5.4 and later working fine again**
 
 
 Bootloader for STM32F103 boards, for use with the Arduino_STM32 repo and the Arduino IDE
@@ -30,6 +31,7 @@ There are multiple build targets for "generic" STM32F103 boards, because each ve
 So if your board has an LED on pin PC13 the makefile target is "generic-pc13" . At the time of writing the following geneirc targets are available (more may be added without this readme being updated each time, so please check the makefile to see the latest list of build targets)
 
 generic-pc13
+generic-pc13_nb (no button at PC14)
 generic-pg15
 generic-pd2
 generic-pd1
