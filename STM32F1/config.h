@@ -157,6 +157,14 @@
 	#define BUTTON_PIN 14
 	#define BUTTON_PRESSED_STATE 1
 	
+#elif defined TARGET_GENERIC_F103_PC13_NB
+	
+	#define LED_BANK			GPIOC 
+	#define LED_PIN 			13
+	#define LED_ON_STATE		0
+
+	// no button yet but small bootloader delay already
+	#define BUTTON_BANK 
 	
 #elif defined TARGET_GENERIC_F103_PG15
 	
