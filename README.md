@@ -30,13 +30,13 @@ There are multiple build targets for "generic" STM32F103 boards, because each ve
 
 So if your board has an LED on pin PC13 the makefile target is "generic-pc13" . At the time of writing the following geneirc targets are available (more may be added without this readme being updated each time, so please check the makefile to see the latest list of build targets)
 
-generic-pc13
-generic-pc13_nb (no button at PC14)
-generic-pg15
-generic-pd2
-generic-pd1
-generic-pa1
-generic-pb9
+generic-pc13  
+generic-pc13_nb (no button at PC14)  
+generic-pg15  
+generic-pd2  
+generic-pd1  
+generic-pa1  
+generic-pb9  
 
 In addition to the LED, the difference in the build targets is 
 (a) whether the device has maple USB reset hardware.
